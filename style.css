@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*impot*/
+:root{
+	--back-col:#FF9706;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	 scroll-behavior: smooth;
+	 overflow-x: hidden;
+}
+body{
+	width: 100vw;
+	height: 300vh;
+	font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+}
+header{
+	height: 60px;
+	width: 99.9%;
+	display: flex;
+	justify-content: space-between;
+	background: var(--back-col);
+}
+.logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 80px;
+
+
+}
+.hamburger{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+.hi{
+	background: white;
+	height: 3px;
+	width: 30px;
+	margin: 3px;
+	border-radius: 8px;
+}
+.rotate .line1{
+       
+	
+}
+.rotate .line2{
+         opacity: 0;
+}
+.rotate .line3{
+      
+      
+}
+.logo h1{
+	text-align: center;
+	margin: 10px 0px 0px 10px;
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+.logo img {
+	
+	height: 60px;
+	width: 60px;
+	object-fit: cover;
+	background-size: cover;	
+	background-position:center;
+    background-origin: content-box;
+    scale: 1.0;
+}
+.nav ul{
+	display: flex;
+
+	
+}
+.nav{  
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 70px;
+}
+.nav ul li{
+	list-style: none;
+	margin: 0px 10px;
+	padding: 20px 20px;
+	transition: scale .5s;
+
+}
+.nav ul li:hover{
+	scale: 1.1;
+}
+.nav ul li a{
+	text-decoration: none;
+	margin: 10px;
+	color: black;
+	font-weight: 600;
+	position: relative;
+	transition: .5s;
+
+
+}
+.nav ul li a:hover{
+	color: white;
+
+
+
+}
+.nav ul li a::before{
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 0;
+   background: black;
+   left: 0;
+   bottom: -1px;
+   border-radius: 5px;
+   transition: .5s;
+   
+
+}
+.nav ul li a:hover::before{
+	width: 100%;
+}
+section{
+	
+	
+}
+section h1{
+    font-size: 50px;
+    text-align: center;
+}
+ span{
+	color:#e74c3c;
+}
+.first p{
+	width: 80%;
+	padding: 10px;
+	text-align: center;
+}
+.arrow {
+	flex-wrap: wrap;
+	width: 99.9%;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.first{
+	width: 99.9%;
+	display: flex;
+	height: 70vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	
+}
+.arrow p {
+	color: #7f8c8d;
+}
+.line{
+    margin: 35px 0px ;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+.line span{
+	color:#333;
+}
+@keyframes move{
+	0%{
+		transform: translateY(0);
+	}
+	/*50%{
+		transform: translateY(5px);
+	}
+*/	100%{
+		transform: translateY(15px);
+	}
+}
+
+.second-page{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	flex-direction: column;
+	width:100%;
+	margin-top: 50px;
+	
+
+}
+.uprow span{
+	color: #333;
+}
+
+.box img{
+	width: 200px ;
+	height: 200px;
+	margin: 20px 50px;
+	transition: .5s;
+	position: relative;
+
+}
+.box{
+	position: relative;
+
+}
+.box img:hover{
+	border-radius: 20px;
+	scale: 1.1;
+}
+.boxes{
+	display: flex;
+	margin: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	align-items: center;
+
+	width:100%;
+
+}
+.box4{
+	object-fit: cover;
+	background-position: center;
+}
+.type{
+	margin: 10px 0px;
+}
+.info {
+	text-align: center;
+}
+.info h4{
+	color: #2c3e50;
+}
+
+.uprow span{
+	bottom: 0;
+	right: 22px;
+	position: fixed;
+	z-index: 1000;
+	background: var(--back-col);
+   font-size: 30px;
+   cursor: pointer;
+   bottom: 10px;
+   border-radius: 10px;
+	opacity: 0;
+	
+}
+.uprow a{
+	color: black;
+
+}
+.active span{
+	opacity: 1;
+}
+.third-page{
+	display: flex;
+		justify-content: left;
+	flex-direction: column;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.third-page h1{
+
+}
+.list-item ul li a{
+	color: black;
+	text-decoration: none;
+	margin: 10px;
+	padding: 9px;
+	line-height: 50px;
+	font-weight: bold;
+}
+.list-item{
+	margin-top: 30px;
+}
+.list-item ul{
+	cursor: pointer;
+}
+/*rgb(17,24,39)*/
+footer{
+	text-align: center;
+	margin: 100px 0px;
+	color: #7f8c8d;
+}
+@media(max-width:847){
+
+}
